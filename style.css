@@ -458,16 +458,14 @@ section {
 #about {
   position: relative;
 }
+
 .about-containers {
   gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
 }
 
 .about-details-container {
   justify-content: center;
   flex-direction: column;
-
 }
 
 .about-containers,
@@ -485,6 +483,12 @@ section {
   bottom: 2.5rem;
 }
 
+.text-container{
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -495,9 +499,24 @@ section {
   text-align: center;
 }
 
+.details-container1 {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(163, 163, 163) 0.1rem solid;
+  text-align: center;
+  justify-content: center;
+  align-items: center; /* Center content vertically */
+  display: flex; /* Ensure flexbox behavior */
+  max-width: 300px; /* Reduce the container width */
+  margin: 0 auto; /* Center the container horizontally */
+  flex-direction: column;
+}
+
 .section-container {
   gap: 4rem;
-  height: 80%;
+  height: 90%;
 }
 
 .section__pic-container {
@@ -526,6 +545,23 @@ section {
   width: auto;
 }
 
+.article-container{
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
+  margin-left: 2.5rem;
+}
+
+
+.article{
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
 /* From Uiverse.io by Juanes200122 */ 
 .container {
   position: relative;
@@ -535,6 +571,8 @@ section {
   margin: 0 15px;
   padding: 10px 20px;
   border-radius: 7px;
+  justify-content: center;
+  text-align: center;
 }
 
 .container .skill-box {
@@ -707,17 +745,17 @@ animation-delay: 0.1s;
 }
 
 .cards .darkslateBlue {
-  background-color: darkslateblue;
+  background-color: dodgerblue;
   height: auto;
 }
 
 .cards .darkBlue {
-  background-color: darkblue;
+  background-color: darkslateblue;
   height: auto;
 }
 
 .cards .Blue {
-  background-color: #3b82f6;
+  background-color: dodgerblue;
   height: auto;
 }
 
