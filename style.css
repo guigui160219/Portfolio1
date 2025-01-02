@@ -568,11 +568,12 @@ section {
   max-width: 500px;
   width: 100%;
   background: #fff;
-  margin: 0 15px;
+  margin: 0 auto; /* Changé de "0 15px" à "0 auto" */
   padding: 10px 20px;
   border-radius: 7px;
-  justify-content: center;
-  text-align: center;
+  display: flex; /* Ajouté */
+  flex-direction: column; /* Ajouté */
+  align-items: center; /* Ajouté */
 }
 
 .container .skill-box {
@@ -750,7 +751,7 @@ animation-delay: 0.1s;
 }
 
 .cards .darkBlue {
-  background-color: darkslateblue;
+  background-color: darkblue;
   height: auto;
 }
 
