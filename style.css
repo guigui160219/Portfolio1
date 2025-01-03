@@ -539,7 +539,8 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: auto;
+  align-items: center;
+  width: 100%;
 }
 
 .article-container{
@@ -565,12 +566,12 @@ section {
   max-width: 500px;
   width: 100%;
   background: #fff;
-  margin: 0 auto; /* Changé de "0 15px" à "0 auto" */
+  margin: 0 auto;
   padding: 10px 20px;
   border-radius: 7px;
-  display: flex; /* Ajouté */
-  flex-direction: column; /* Ajouté */
-  align-items: center; /* Ajouté */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container .skill-box {
@@ -814,7 +815,9 @@ animation-delay: 0.1s;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  align-items: center;
+  min-height: 70vh;
+  padding: 2rem 0;
 }
 
 .contact-info-upper-container {
@@ -826,14 +829,19 @@ animation-delay: 0.1s;
   background: rgb(255, 255, 255);
   margin: 2rem auto;
   padding: 0.5rem;
+  width: 90%;
+  max-width: 500px;
 }
+
 .contact-info-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   margin: 1rem;
+  flex-wrap: wrap;
 }
+
 .contact-info-container p {
   font-size: large;
 }
@@ -845,15 +853,17 @@ animation-delay: 0.1s;
 
 /* From Uiverse.io by PapaUiiss404 */ 
 .card {
-  width: fit-content;
-  height: fit-content;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px 25px;
+  padding: 25px;
   gap: 20px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0);
+  flex-wrap: wrap;
 }
 
 /* for all social containers*/
