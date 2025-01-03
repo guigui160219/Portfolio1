@@ -454,39 +454,26 @@ section {
   scale: 0.7;
 }
 
-/*about section*/
+/* Update the about section styles */
 #about {
   position: relative;
 }
 
 .about-containers {
+  display: flex;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .about-details-container {
-  justify-content: center;
+  display: flex;
   flex-direction: column;
 }
 
-.about-containers,
-.about-details-container {
+.section-container {
   display: flex;
-}
-
-.about-pic {
-  border-radius: 2rem;
-}
-
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
-
-.text-container{
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  gap: 4rem;
+  height: auto;
 }
 
 .details-container {
@@ -506,23 +493,33 @@ section {
   border-radius: 2rem;
   border: rgb(163, 163, 163) 0.1rem solid;
   text-align: center;
-  justify-content: center;
-  align-items: center; /* Center content vertically */
-  display: flex; /* Ensure flexbox behavior */
-  max-width: 300px; /* Reduce the container width */
-  margin: 0 auto; /* Center the container horizontally */
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
-.section-container {
-  gap: 4rem;
-  height: 90%;
+.text-container {
+  text-align: justify;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
+/* Update the section__pic-container for better responsiveness */
 .section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+  display: flex;
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.about-pic {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
 }
 
 /*experience*/
