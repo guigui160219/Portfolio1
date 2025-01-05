@@ -169,8 +169,15 @@
 /* Media query for smaller screens (e.g., mobile devices) */
 @media screen and (max-width: 768px) {
   .text-container {
-    font-size: 14px; /* Smaller font size for better readability on smaller screens */
-    padding: 15px; /* Reduced padding to fit smaller screens */
+    font-size: 0.95rem; /* Smaller font size for better readability on smaller screens */
+  }
+  .details-container{
+    width: 100%;
+    max-width: 400px;
+  }
+  .section-container{
+    flex-direction: column;
+    align-items: center;
   }
 }
 

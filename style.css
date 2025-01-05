@@ -164,6 +164,7 @@ section {
 
 .section-container {
   display: flex;
+  align-items: center;
 }
 
 /*profile*/
@@ -471,7 +472,6 @@ section {
 .about-details-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .section-container {
@@ -523,7 +523,6 @@ section {
 .about-pic {
   width: 100%;
   height: auto;
-  border-radius: 2rem;
 }
 
 /*experience*/
