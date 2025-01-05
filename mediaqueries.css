@@ -1,114 +1,191 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    /* Hide desktop nav and show hamburger nav */
-    #desktop-nav {
-      display: none;
-    }
-    #hamburger-nav {
-      display: flex;
-    }
-  
-    /* Adjust section margins */
-    section {
-      margin: 0 5%;
-    }
-  
-    /* Profile section */
-    #profile {
-      flex-direction: column;
-      gap: 2rem;
-    }
-    .section__pic-container {
-      width: 275px;
-      height: 275px;
-    }
-  
-    /* About section */
-    .about-containers {
-      flex-direction: column;
-    }
-    .about-details-container {
-      margin-top: 2rem;
-    }
-    .section-container {
-      flex-direction: column;
-    }
-  
-    /* Experience section */
-    #experience {
-      margin-top: 2rem;
-    }
-  
-    /* Projects section */
-    .cards {
-      flex-direction: column;
-      align-items: center;
-    }
-    .cards .card {
-      width: 100%;
-    }
-  
-    /* Contact section */
-    #contact {
-      height: auto;
-    }
+  /* Previous styles remain the same */
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+
+  section {
+    margin: 0 5%;
+  }
+
+  #profile {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+  }
+
+  .about-containers {
+    flex-direction: column;
+  }
+  .about-details-container {
+    margin-top: 2rem;
+  }
+  .section-container {
+    flex-direction: column;
+  }
+
+  /* Updated Experience section styles */
+  #experience {
+    margin-top: 2rem;
+  }
+  .experience-details-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .about-containers {
+    width: 100%;
+    margin: 0;
+  }
+  .details-container {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .card__tags {
+    padding: 1rem;
+  }
+  .tag {
+    gap: 0.5rem;
+  }
+
+  /* Previous styles remain the same */
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards .card {
+    width: 100%;
+  }
+
+  #contact {
+    height: auto;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  section {
+    margin: 0 7%;
+  }
+
+  #profile {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  /* Updated Experience section styles */
+  .experience-details-container {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .about-containers {
+    width: 100%;
+  }
+  .details-container {
+    width: 100%;
+    padding: 2rem;
   }
   
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) and (max-width: 768px) {
-    /* Adjust section margins */
-    section {
-      margin: 0 7%;
-    }
-  
-    /* Profile section */
-    #profile {
-      flex-direction: column;
-      gap: 3rem;
-    }
-  
-    /* About section */
-    .about-containers {
-      flex-direction: column;
-    }
-    .section-container {
-      flex-direction: column;
-    }
-  
-    /* Projects section */
-    .cards {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .cards .card {
-      width: 45%;
-    }
+  /* Previous styles remain the same */
+  .section-container {
+    flex-direction: column;
+  }
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cards .card {
+    width: 45%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  section {
+    margin: 0 10%;
+  }
+
+  /* Updated Experience section styles */
+  .experience-details-container {
+    gap: 2.5rem;
+  }
+  .about-containers {
+    width: calc(50% - 1.25rem);
+  }
+  .details-container {
+    padding: 2rem;
   }
   
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) and (max-width: 992px) {
-    /* Adjust section margins */
-    section {
-      margin: 0 10%;
-    }
-  
-    /* About section */
-    .section-container {
-      flex-direction: column;
-    }
-  
-    /* Projects section */
-    .cards {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .cards .card {
-      width: 45%;
-    }
+  /* Previous styles remain the same */
+  .section-container {
+    flex-direction: column;
+  }
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cards .card {
+    width: 45%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .experience-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+  }
+  .about-containers {
+    width: calc(50% - 1.25rem); /* Adjust width to fit three in a row */
+  }
+  .details-container {
+    padding: 2rem;
   }
   
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    /* No major changes needed, use default styles */
+  /* Ensure that the details containers don't overflow */
+  .details-container, .details-container1 {
+    min-width: 300px; /* Minimum width to maintain readability */
+    flex: 1; /* Allow them to grow and shrink evenly */
   }
-  
+}
+/* Base styles for text containers */
+.text-container {
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  .text-container {
+    font-size: 14px; /* Smaller font size for better readability on smaller screens */
+    padding: 15px; /* Reduced padding to fit smaller screens */
+  }
+}
+
+/* Media query for larger screens (e.g., tablets and desktops) */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .text-container {
+    font-size: 15px; /* Slightly smaller than base for medium screens */
+    padding: 18px; /* Adjust padding for medium screens */
+  }
+}
+
+/* Media query for very large screens */
+@media screen and (min-width: 1201px) {
+  .text-container {
+    font-size: 18px; /* Larger font size for large screens */
+    padding: 25px; /* More generous padding for larger screens */
+  }
+}
